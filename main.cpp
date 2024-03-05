@@ -18,7 +18,7 @@ public:
         : QWebEngineView(parent), m_tab(parent)
     {
         connect(this, &QWebEngineView::loadStarted, this, &HtmlView::onLoadStarted);
-        connect(this, &QWebEngineView::loadFinished, this, &HtmlView::onLoadFinished);
+        connect(this, &QWebEngineew::loadFinished, this, &HtmlView::onLoadFinished);
         connect(this->page(), &QWebEnginePage::loadFinished, this, &HtmlView::applyStyles);
 
     }
